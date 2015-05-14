@@ -5,27 +5,60 @@
   font-family: Roboto;
 }
 body {
-  background-image: url(https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/bg.jpg?raw=true);
-  position: absolute;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/bg.jpg?raw=true);
   margin: 0 auto;
   width: 1700px;
   height: auto;
   font-size: 62.5%;
 }
 .content {
-  @include outer-container(1000px);
+  @include outer-container(1130px);
 
 }
-.sub {
-  @include span-columns(6 of 12);
-  @include shift(7);
-  float: right;
-  color: white;
+.topsocial {
+  @include span-columns(12);
 }
-.social-icon {
+.sub {
+  @include shift(5);
+  color: white;
+  line-height: 60px;
+  font-size: 1.6em;
+}
+.social {
   @include span-columns(1 of 12);
-  background-color: red;
-  height: 60px;
+  height: 70px;
+  float: right;
+  border-bottom: 5px solid rgba(135, 135, 131, .8);
+  text-align: center;
+}
+.face {
+  background-color: rgba(66, 86, 149, 1);
+  margin-left: 25px;
+}
+.yell {
+  background-color: rgba(204, 143, 50, 1);
+}
+.twitt {
+  background-color: rgba(106, 141, 199, 1);
+}
+.youtube {
+  background-color: rgba(178, 56, 45, 1);
+}
+.fa {
+  margin-top: 10px;
+  color: white;
+  opacity: .5;
+}
+.fa:hover {
+  opacity: 1;
+}
+.fa-circle {
+  color: white;
+  margin-left: 10px;
+}
+.dotmenu {
+  @include span-columns(.3);
+  display: inline;
   float: right;
 }
 .navigate {
@@ -46,6 +79,14 @@ body {
 .navhead {
   line-height: 50px;
 }
+.navhead:hover {
+  letter-spacing: 3px;
+  transition-timing-function: ease-in;
+}
+.nav:active {
+  border-bottom: 0;
+  margin-top: 75px;
+}
 .pic {
   background-image: url(https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/top-image.png?raw=true);
   background-size: 50% / cover;
@@ -55,6 +96,7 @@ body {
   border: 6px solid white;
   margin-top: 20px;
   overflow: hidden;
+  box-shadow: 0 5px 0 rgba(135, 135, 131, .8);
 }
 .grid {
   @include span-columns(12);
@@ -116,26 +158,40 @@ p {
   @include span-columns(12);
   height: 550px;
 }
+
 .skater {
   border: 5px solid white;
   text-align: center;
   font-weight: 900;
+  box-shadow: 0 5px 0 grey;
 }
+
+.skater:hover .name {
+  color: rgba(0, 0, 0, 0);
+}
+.lanceandrod {
+  @include span-columns(8, inline-block);
+}
+
 .lance {
-  @include span-columns(4 of 12);
+  @include span-columns(4 of 8);
   background-image: url(https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/sk8er-4.png?raw=true);
   background-size: cover;
   background-position: -50px;
   height: 250px;
 }
 .rodney {
-  @include span-columns(4 of 12);
+  @include span-columns(4 of 8);
   background-image: url(https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/sk8er-3.png?raw=true);
   background-size: cover;
   height: 250px;
 }
+
+.stevecontain {
+  @include span-columns(8, inline-block);
+}
 .steve {
-  @include span-columns(8 of 12);
+  @include span-columns(8 of 8);
   background-image: url(https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/sk8er-1.png?raw=true);
   background-size: cover;
   background-position: 0 -50px;
@@ -143,15 +199,16 @@ p {
   margin-top: 20px;
   float: left;
 }
+
+.tommycontain {
+  @include span-columns(4, inline-block);
+}
 .tommy {
-  @include span-columns(2.5 of 12);
+  @include span-columns(4 of 4);
   background-image: url(https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/sk8er-2.png?raw=true);
   background-size: cover;
   background-position: -450px;
   height: 520px;
-  float: right;
-  position: absolute;
-  margin-left: 675px;
 }
 .name {
   margin: 0 auto;
@@ -163,6 +220,7 @@ p {
   @include span-columns(12);
   height: auto;
   background-color: white;
+  border-bottom: 5px solid grey;
 }
 .board {
   @include span-columns(1);
@@ -172,44 +230,44 @@ p {
 }
 .form {
   @include span-columns(12);
-  height: 400px;
   background-color: rgba(248, 248, 248, 1);
   border-bottom: 5px solid grey;
   margin-top: 20px;
 }
+.contactinfo {
+  @include span-columns(6 of 12);
+}
 .contact {
-  @include span-columns(5 of 12);
-  float: left;
   font-size: 2em;
   margin-top: 10px;
   color: rgba(8, 9, 3, 1);
 }
 .formpara {
-  @include span-columns(5 of 12);
-  float: left;
   font-size: 1.6em;
   margin-top: 10px;
   color: rgba(85, 85, 85, 1);
 }
-/* .smallsocial {
-  @include span-columns(2);
-  @include shift(2)
-  height: 50px;
-  background-color: red;
-  margin-top: 200px;
-} */
+.smallsocial {
+  @include span-columns(1);
+  height: 35px;
+  background-color: grey;
+  margin-top: 10px;
+}
+
+.contactfill {
+  @include span-columns(6 fo 12);
+}
 .nameform {
-  @include span-columns(6 of 12);
-  @include shift(5);
+  @include span-columns(11 of 12);
   height: 60px;
   box-shadow: inset 2px 2px 2px grey;
   border: 1px solid black;
   color: silver;
   font-size: 1.4em;
+  margin-top: 20px;
 }
 .email {
-  @include span-columns(6 of 12);
-  @include shift(5);
+  @include span-columns(11 of 12);
   height: 60px;
   box-shadow: inset 2px 2px 2px grey;
   border: 1px solid black;
@@ -218,8 +276,7 @@ p {
   margin-top: 10px;
 }
 .message {
-  @include span-columns(6 of 12);
-  @include shift(5);
+  @include span-columns(11 of 12);
   height: 100px;
   box-shadow: inset 2px 2px 2px grey;
   border: 1px solid black;
@@ -228,13 +285,13 @@ p {
   margin-top: 10px;
 }
 .sumbit {
-  @include span-columns(4 of 12);
-  @include shift(7);
   background-color: rgba(180, 41, 46, 1);
   color: white;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  @include span-columns(7);
+  line-height: 50px;
   font-size: 1.6em;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
+  margin-bottom: 30px;
 }
