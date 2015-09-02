@@ -49,7 +49,8 @@ body {
   float: right;
   box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6);
   height: 70px;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .social:last-child {
     margin-right: 0; }
 
@@ -72,7 +73,8 @@ body {
   opacity: .5; }
 
 .fa:hover {
-  opacity: 1; }
+  opacity: 1;
+  transition: 1s; }
 
 .fa-circle {
   color: white;
@@ -109,7 +111,8 @@ body {
   height: 50px;
   text-align: center;
   font-size: 1.8em;
-  box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6); }
+  box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6);
+  cursor: pointer; }
   .nav:last-child {
     margin-right: 0; }
 
@@ -133,9 +136,10 @@ body {
 .navhead::after {
   right: -25px; }
 
-.navhead:hover {
+.nav:hover {
   transition: 1s;
-  letter-spacing: 3px; }
+  color: #b4282e;
+  background-color: white; }
 
 .nav:active {
   margin-top: 75px;
@@ -184,10 +188,28 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
+  width: 48.82117%;
+  margin-left: 46.91392%;
   height: 50px; }
   .dots:last-child {
     margin-right: 0; }
+
+.dot-divider {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  float: left;
+  margin-top: 15px;
+  margin-right: 15px; }
+
+.dot-selected {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 7.5px;
+  margin-left: 7.235px;
+  background-color: #b4292e; }
 
 .newsstand {
   float: left;
@@ -239,7 +261,8 @@ p {
   margin-top: 50px;
   margin-left: 100px;
   color: #b21e27;
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  cursor: pointer; }
 
 .skatergroup {
   float: left;
@@ -258,13 +281,15 @@ p {
   height: 224px; }
 
 .skater:hover .name {
-  color: transparent; }
+  color: transparent;
+  transition: 1s; }
 
 .lanceandrod {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%; }
+  width: 65.88078%;
+  cursor: pointer; }
   .lanceandrod:last-child {
     margin-right: 0; }
 
@@ -310,7 +335,8 @@ p {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 31.76157%;
+  cursor: pointer; }
   .tommycontain:last-child {
     margin-right: 0; }
 
@@ -361,7 +387,9 @@ p {
   width: 100%;
   background-color: #f8f8f8;
   box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6);
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px; }
   .form:last-child {
     margin-right: 0; }
 
@@ -390,9 +418,30 @@ p {
   width: 6.17215%;
   margin-top: 10px;
   background-color: grey;
-  height: 35px; }
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer; }
   .smallsocial:last-child {
     margin-right: 0; }
+
+.small-fac {
+  margin-left: 8.5298%;
+  background-color: #425695; }
+
+.fac-logo {
+  font-size: 20px; }
+
+.small-yell {
+  background-color: #cc8f32; }
+
+.small-twit {
+  background-color: #6a8ec2; }
+
+.small-yout {
+  background-color: #b23631; }
 
 .contactfill {
   float: left;
@@ -403,7 +452,9 @@ p {
     margin-right: 0; }
 
 .text {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 5px; }
 
 .nameform {
   float: left;
@@ -411,10 +462,8 @@ p {
   margin-right: 2.35765%;
   width: 91.4702%;
   margin-top: 20px;
-  border: 1px solid black;
-  box-shadow: inset 2px 2px 2px grey;
   height: 60px;
-  color: silver;
+  color: #b4292e;
   font-size: 1.4em; }
   .nameform:last-child {
     margin-right: 0; }
@@ -425,10 +474,8 @@ p {
   margin-right: 2.35765%;
   width: 91.4702%;
   margin-top: 10px;
-  border: 1px solid black;
-  box-shadow: inset 2px 2px 2px grey;
   height: 60px;
-  color: silver;
+  color: #b4292e;
   font-size: 1.4em; }
   .email:last-child {
     margin-right: 0; }
@@ -439,10 +486,8 @@ p {
   margin-right: 2.35765%;
   width: 91.4702%;
   margin-top: 10px;
-  border: 1px solid black;
-  box-shadow: inset 2px 2px 2px grey;
   height: 100px;
-  color: silver;
+  color: #b4292e;
   font-size: 1.4em; }
   .message:last-child {
     margin-right: 0; }
@@ -459,6 +504,7 @@ p {
   text-align: center;
   line-height: 50px;
   color: white;
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  cursor: pointer; }
   .sumbit:last-child {
     margin-right: 0; }
