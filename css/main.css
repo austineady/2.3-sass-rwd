@@ -1,0 +1,510 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+* {
+  /* border: 1px solid red; */
+  font-family: Roboto; }
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/bg.jpg?raw=true");
+  margin: 0 auto;
+  max-width: 1700px;
+  height: auto;
+  font-size: 62.5%; }
+
+.content {
+  max-width: 1028px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.topsocial {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .topsocial:last-child {
+    margin-right: 0; }
+
+.sub {
+  margin-left: 42.64902%;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: white;
+  font-size: 1.6em; }
+
+.social {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  float: right;
+  box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6);
+  height: 70px;
+  text-align: center;
+  cursor: pointer; }
+  .social:last-child {
+    margin-right: 0; }
+
+.face {
+  margin-left: 25px;
+  background-color: #425695; }
+
+.yell {
+  background-color: #cc8f32; }
+
+.twitt {
+  background-color: #6a8dc7; }
+
+.youtube {
+  background-color: #b2382d; }
+
+.fa {
+  margin-top: 10px;
+  color: white;
+  opacity: .5; }
+
+.fa:hover {
+  opacity: 1;
+  transition: 1s; }
+
+.fa-circle {
+  color: white;
+  margin-left: 10px; }
+
+.dotmenu {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 0.20129%;
+  display: inline;
+  float: right; }
+  .dotmenu:last-child {
+    margin-right: 0; }
+
+.navigate {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: auto; }
+  .navigate:last-child {
+    margin-right: 0; }
+
+.nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  float: left;
+  margin-top: 70px;
+  background-color: #b4282e;
+  color: white;
+  height: 50px;
+  text-align: center;
+  font-size: 1.8em;
+  box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6);
+  cursor: pointer; }
+  .nav:last-child {
+    margin-right: 0; }
+
+.navhead {
+  line-height: 50px;
+  text-transform: uppercase;
+  position: relative; }
+
+.navhead::before,
+.navhead::after {
+  content: "";
+  display: block;
+  width: 14px;
+  border: 2px solid white;
+  position: absolute;
+  top: 7px; }
+
+.navhead::before {
+  left: -25px; }
+
+.navhead::after {
+  right: -25px; }
+
+.nav:hover {
+  transition: 1s;
+  color: #b4282e;
+  background-color: white; }
+
+.nav:active {
+  margin-top: 75px;
+  border-bottom: 0; }
+
+.pic {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 20px;
+  border: 6px solid white;
+  box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6);
+  background-image: url("https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/top-image.png?raw=true");
+  background-position: -30px -100px;
+  background-size: 50% / cover;
+  height: 400px;
+  overflow: hidden; }
+  .pic:last-child {
+    margin-right: 0; }
+
+.grid {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  opacity: .4; }
+  .grid:last-child {
+    margin-right: 0; }
+
+.logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  position: absolute;
+  float: left;
+  z-index: 1;
+  margin-top: 50px;
+  margin-left: 20px;
+  height: auto; }
+  .logo:last-child {
+    margin-right: 0; }
+
+.dots {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 46.91392%;
+  height: 50px; }
+  .dots:last-child {
+    margin-right: 0; }
+
+.dot-divider {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  float: left;
+  margin-top: 15px;
+  margin-right: 15px; }
+
+.dot-selected {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 7.5px;
+  margin-left: 7.235px;
+  background-color: #b4292e; }
+
+.newsstand {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 400px; }
+  .newsstand:last-child {
+    margin-right: 0; }
+
+.news {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  border-bottom: 5px solid rgba(135, 135, 131, 0.8);
+  background-color: #fafafa;
+  height: 350px; }
+  .news:last-child {
+    margin-right: 0; }
+
+.newstitle {
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+  font-size: 2.8em;
+  color: #12150f; }
+
+.date {
+  float: left;
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #a7a7a7;
+  display: block;
+  margin-left: 10px; }
+
+.lastthird {
+  margin-top: 45px; }
+
+p {
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #999999;
+  font-size: 1.3em; }
+
+.read {
+  float: left;
+  margin-top: 50px;
+  margin-left: 100px;
+  color: #b21e27;
+  font-size: 1.8em;
+  cursor: pointer; }
+
+.skatergroup {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 550px; }
+  .skatergroup:last-child {
+    margin-right: 0; }
+
+.skater {
+  border: 5px solid white;
+  text-align: center;
+  font-weight: 900;
+  box-shadow: 0 5px 0 grey;
+  height: 224px; }
+
+.skater:hover .name {
+  color: transparent;
+  transition: 1s; }
+
+.lanceandrod {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  cursor: pointer; }
+  .lanceandrod:last-child {
+    margin-right: 0; }
+
+.lance {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 48.21067%;
+  background-image: url("https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/sk8er-4.png?raw=true");
+  background-size: cover;
+  background-position: -80px;
+  height: 250px; }
+  .lance:last-child {
+    margin-right: 0; }
+
+.rodney {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 48.21067%;
+  margin-right: 0;
+  background-image: url("https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/sk8er-3.png?raw=true");
+  background-size: cover;
+  height: 250px; }
+  .rodney:last-child {
+    margin-right: 0; }
+
+.steve {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 100%;
+  background-image: url("https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/sk8er-1.png?raw=true");
+  background-size: cover;
+  background-position: 0 -50px;
+  height: 250px;
+  margin-top: 20px;
+  float: left; }
+  .steve:last-child {
+    margin-right: 0; }
+
+.tommycontain {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  cursor: pointer; }
+  .tommycontain:last-child {
+    margin-right: 0; }
+
+.tommy {
+  float: left;
+  display: block;
+  margin-right: 7.42297%;
+  width: 100%;
+  background-image: url("https://github.com/TIY-GVL-FEE-2015-May/assignments/blob/master/2.3-sass-rwd/assets/sk8er-2.png?raw=true");
+  background-position: -470px;
+  background-size: cover;
+  height: 520px; }
+  .tommy:last-child {
+    margin-right: 0; }
+
+.name {
+  margin: 0 auto;
+  font-size: 4em;
+  color: white;
+  line-height: 250px; }
+
+.boards {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6); }
+  .boards:last-child {
+    margin-right: 0; }
+
+.board {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .board:last-child {
+    margin-right: 0; }
+
+.white {
+  margin-left: 8.5298%; }
+
+.form {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #f8f8f8;
+  box-shadow: 0 5px 0 rgba(135, 135, 131, 0.6);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px; }
+  .form:last-child {
+    margin-right: 0; }
+
+.contactinfo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .contactinfo:last-child {
+    margin-right: 0; }
+
+.contact {
+  margin-top: 10px;
+  color: #080903;
+  font-size: 2em; }
+
+.formpara {
+  margin-top: 10px;
+  color: #555555;
+  font-size: 1.6em; }
+
+.smallsocial {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  margin-top: 10px;
+  background-color: grey;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer; }
+  .smallsocial:last-child {
+    margin-right: 0; }
+
+.small-fac {
+  margin-left: 8.5298%;
+  background-color: #425695; }
+
+.fac-logo {
+  font-size: 20px; }
+
+.small-yell {
+  background-color: #cc8f32; }
+
+.small-twit {
+  background-color: #6a8ec2; }
+
+.small-yout {
+  background-color: #b23631; }
+
+.contactfill {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .contactfill:last-child {
+    margin-right: 0; }
+
+.text {
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 5px; }
+
+.nameform {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  margin-top: 20px;
+  height: 60px;
+  color: #b4292e;
+  font-size: 1.4em; }
+  .nameform:last-child {
+    margin-right: 0; }
+
+.email {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  margin-top: 10px;
+  height: 60px;
+  color: #b4292e;
+  font-size: 1.4em; }
+  .email:last-child {
+    margin-right: 0; }
+
+.message {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  margin-top: 10px;
+  height: 100px;
+  color: #b4292e;
+  font-size: 1.4em; }
+  .message:last-child {
+    margin-right: 0; }
+
+.sumbit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #b4292e;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 1.6em;
+  cursor: pointer; }
+  .sumbit:last-child {
+    margin-right: 0; }
